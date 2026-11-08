@@ -1,4 +1,4 @@
-package calculation
+package Calculation
 
 import operations "github.com/daswaget/GoTestProject/operations"
 
