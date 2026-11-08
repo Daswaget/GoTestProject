@@ -1,6 +1,6 @@
 package calculation
 
-import operations "github.com/daswaget/GoTestProject/operaions"
+import operations "github.com/daswaget/GoTestProject/operations"
 
 type Calculator interface {
 	Calculate(x, y float64) float64
