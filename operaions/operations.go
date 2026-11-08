@@ -1,4 +1,4 @@
-package operaions
+package operations
 
 type BinaryOperation func(x, y float64) float64
 
