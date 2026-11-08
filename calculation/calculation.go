@@ -1,5 +1,7 @@
 package calculation
 
+import operations "github.com/daswaget/GoTestProject/operaions"
+
 type Calculator interface {
 	Calculate(x, y float64) float64
 }
@@ -7,23 +9,23 @@ type Calculator interface {
 type AdditionCalculator struct{}
 
 func (c AdditionCalculator) Calculate(x, y float64) float64 {
-	return x + y
+	return operations.Addition(x, y)
 }
 
 type SubtractionCalculator struct{}
 
 func (c SubtractionCalculator) Calculate(x, y float64) float64 {
-	return x - y
+	return operations.Subtraction(x, y)
 }
 
 type MultiplicationCalculator struct{}
 
 func (c MultiplicationCalculator) Calculate(x, y float64) float64 {
-	return x * y
+	return operations.Multiplication(x, y)
 }
 
 type DivisionCalculator struct{}
 
 func (c DivisionCalculator) Calculate(x, y float64) float64 {
-	return x / y
+	return operations.Division(x, y)
 }
